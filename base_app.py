@@ -134,10 +134,12 @@ def main():
         Our mission is to leverage machine learning to automate the classification of news articles, providing insights into the distribution of news topics and aiding in content analysis.
 
         ### Team Members
-        - **John Doe:** Data Scientist
-        - **Jane Smith:** Machine Learning Engineer
-        - **Alice Johnson:** Software Developer
-        - **Bob Lee:** Project Manager
+        - **Charmaine Mdluli:** Team Leader
+        - **Amanda Mokeona:** Github Manager
+        - **Nombuso Dlamini:** Trello Board Manager
+        - **Nonkululeko Mgaga:** Data Scientist
+        - **Ntandoyenkosi Biyela:** Project Manager
+        - **Nonhlahla Joyisa:** Data Scientist           
 
         ### Technologies Used
         - **Programming Languages:** Python
@@ -145,9 +147,13 @@ def main():
         - **Libraries:** pandas, joblib, matplotlib
 
         ### Contact Information
-        - **Email:** contact@exploreai.com
-        - **Phone:** +123-456-7890
-        - **Address:** 123 AI Street, Data City, ML State, 56789
+        - **Ntandoyenkosi:** biyelantandoyenkosi12@gmail.com
+        - **Charmaine Mdluli:** charmainemdluli4@gmail.com
+        - **Amanda Mokeona:** zalmokeona@gmail.com
+        - **Nombuso Dlamini:** nombu.dlamini02@gmail.com
+        - **Nonkululeko Mgaga:** nonkululekomgaga1@gmail.com
+        - **Nonhlahla Joyisa:** nonhlaj@yahoo.com     
+    
 
         ### Future Plans
         We plan to expand the functionality of this application by incorporating more advanced models and additional features, such as real-time news analysis and integration with news APIs.
