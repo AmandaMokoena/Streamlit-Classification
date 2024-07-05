@@ -28,8 +28,12 @@ import os
 # Data dependencies
 import pandas as pd
 
+# Get the current directory of the script
+current_dir = os.path.dirname(__file__)
+
 # Vectorizer
-news_vectorizer = open("/mnt/c/Users/biyel/OneDrive/Desktop/Streamlit-Classification/tfidfvect.pkl", "rb")
+vectorizer_path = os.path.join(current_dir, "tfidfvect.pkl")
+news_vectorizer = open(vectorizer_path, "rb")
 test_cv = joblib.load(news_vectorizer)  # loading your vectorizer from the pkl file
 
 # The main function where we will build the actual app
@@ -98,12 +102,13 @@ def main():
             
             # Load and apply the chosen model
             if model_choice == "Logistic Regression":
-                predictor = joblib.load(open("/mnt/c/Users/biyel/OneDrive/Desktop/Streamlit-Classification/logistic_regression.pkl", "rb"))
+                model_path = os.path.join(current_dir, "logistic_regression.pkl")
             elif model_choice == "Random Forest":
-                predictor = joblib.load(open("/mnt/c/Users/biyel/OneDrive/Desktop/Streamlit-Classification/rf_classifier_model.pkl", "rb"))
+                model_path = os.path.join(current_dir, "rf_classifier_model.pkl")
             elif model_choice == "Support Vector Machine":
-                predictor = joblib.load(open("/mnt/c/Users/biyel/OneDrive/Desktop/Streamlit-Classification/svm_classifier_model.pkl", "rb"))
+                model_path = os.path.join(current_dir, "svm_classifier_model.pkl")
 
+            predictor = joblib.load(open(model_path, "rb"))
             prediction = predictor.predict(vect_text)
 
             # When model has successfully run, will print prediction
@@ -115,9 +120,9 @@ def main():
     if selection == "EDA":
         st.info("Exploratory Data Analysis")
         st.markdown("### Category Distribution")
-        st.image("/mnt/c/Users/biyel/OneDrive/Desktop/Streamlit-Classification/Category EDA.png")
+        st.image(os.path.join(current_dir, "Category EDA.png"))
         st.markdown("### Frequent Words in Articles")
-        st.image("/mnt/c/Users/biyel/OneDrive/Desktop/Streamlit-Classification/Frequent words.png")
+        st.image(os.path.join(current_dir, "Frequent words.png"))
 
     # Building out the "About Us" page
     if selection == "About Us":
