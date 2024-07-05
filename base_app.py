@@ -151,8 +151,8 @@ def main():
         - **Charmaine Mdluli:** charmainemdluli4@gmail.com
         - **Amanda Mokeona:** zalmokeona@gmail.com
         - **Nombuso Dlamini:** nombu.dlamini02@gmail.com
-        - **Nonkululeko Mgaga:** nonkululekomgaga1@gmail.com
-        - **Nonhlahla Joyisa:** nonhlaj@yahoo.com     
+        - **Nonhlahla Joyisa:** nonhlaj@yahoo.com
+        - **Nonkululeko Mgaga:** nonkululekomgaga1@gmail.com   
     
 
         ### Future Plans
